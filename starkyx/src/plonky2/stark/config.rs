@@ -62,11 +62,11 @@ impl<C: CurtaConfig<D>, const D: usize> StarkyConfig<C, D> {
             num_challenges: 2,
             degree_bits,
             fri_config: FriConfig {
-                rate_bits: 3,
+                rate_bits: 4,
                 cap_height: 4,
                 proof_of_work_bits: 16,
                 reduction_strategy: FriReductionStrategy::ConstantArityBits(4, 5),
-                num_query_rounds: 33,
+                num_query_rounds: 25,
             },
             _marker: core::marker::PhantomData,
         }
